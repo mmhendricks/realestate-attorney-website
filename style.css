@@ -78,6 +78,7 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
   font-weight: 700;
   margin: 0;
 }
+
 .orange-rule { width:70px; height:5px; background:var(--orange); margin:22px 0 28px; }
 .benefits { list-style:none; padding:0; margin:0; display:grid; gap:24px; }
 .benefits li { display:flex; align-items:flex-start; gap:17px; color:#223a55; font-size:1.18rem; }
