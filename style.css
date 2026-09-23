@@ -48,10 +48,25 @@ nav a { padding:34px 0 28px; border-bottom:3px solid transparent; }
 nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
 .menu-toggle { display:none; background:none; border:0; font-size:1.8rem; color:var(--navy); }
 
-.hero { position:relative; overflow:hidden; background:var(--navy-2); color:#fff; min-height:530px; }
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: var(--navy-2);
+  color: #fff;
+  min-height: 500px;
+}
+
 .hero-overlay { position:absolute; inset:0; background:linear-gradient(90deg, rgba(5,26,47,.97) 0%, rgba(7,28,50,.9) 48%, rgba(7,28,50,.2) 100%); z-index:1; }
 .hero::after { content:""; position:absolute; inset:0; background:linear-gradient(135deg, rgba(243,107,33,.22), transparent 35%); pointer-events:none; }
-.hero .container { position:relative; z-index:2; min-height:530px; display:grid; grid-template-columns:1.1fr .9fr; align-items:center; }
+.hero .container {
+  position: relative;
+  z-index: 2;
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  align-items: center;
+}
+
 .hero-copy { padding:65px 0; }
 .eyebrow { font-size:.78rem; font-weight:800; letter-spacing:.04em; color:#fff; margin:0 0 20px; }
 .hero h1 { margin:0; font-size:clamp(3.2rem, 7vw, 6.1rem); line-height:.9; letter-spacing:-.045em; }
@@ -65,7 +80,10 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
 .hero-photo { height:100%; display:flex; align-items:stretch; justify-content:flex-end; }
 .hero-photo img { height:100%; min-height:530px; object-fit:cover; max-width:620px; opacity:.92; clip-path:polygon(18% 0,100% 0,100% 100%,0 100%); }
 
-.section { padding:80px 0; }
+.section {
+  padding: 60px 0;
+}
+
 .help { background:#fff; }
 .help-grid { display:grid; grid-template-columns:1fr 1fr; gap:65px; align-items:center; }
 .section-kicker { color:var(--orange); font-weight:900; letter-spacing:.06em; font-size:.95rem; margin:0 0 5px; }
@@ -156,7 +174,11 @@ footer { background:#111c28; color:#fff; padding:24px 0; font-size:.82rem; }
   .footer-inner { flex-direction:column; align-items:flex-start; }
 }
 @media (max-width: 520px) {
-  .container { width:min(100% - 28px, 1160px); }
+  .container {
+    width: calc(100% - 20px);
+    max-width: none;
+  }
+  
   .topbar-inner { min-height:48px; }
   .phone { font-size:.98rem; }
   .top-cta { padding:8px 13px; font-size:.78rem; }
