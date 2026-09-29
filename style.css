@@ -516,3 +516,11 @@ footer { background:#111c28; color:#fff; padding:24px 0; font-size:.82rem; }
 .hero .button {
   margin-top: 25px;
 }
+.header-phone {
+  color: var(--orange);
+  font-size: 1.15rem;
+  font-weight: 900;
+  white-space: nowrap;
+  margin-left: auto;
+  margin-right: auto;
+}
