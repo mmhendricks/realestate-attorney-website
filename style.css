@@ -102,8 +102,8 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
 }
 
 .help-title {
-  color: var(--orange);
-  font-size: clamp(4rem, 8vw, 6rem);
+  color: var(--orange) !important;
+  font-size: clamp(3rem, 6vw, 5rem);
   line-height: .9;
   font-weight: 900;
   margin: 0 0 12px;
