@@ -122,8 +122,9 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
 }
 .hero-photo {
   height: 500px;
+  align-self: start;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-end;
 }
 .hero-photo img {
