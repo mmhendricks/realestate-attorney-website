@@ -480,3 +480,23 @@ footer { background:#111c28; color:#fff; padding:24px 0; font-size:.82rem; }
   }
 }
   
+/* FIX: REVIEWS + CONTACT DESKTOP LAYOUT */
+@media (min-width: 851px) {
+  .reviews-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 60px;
+    align-items: start;
+  }
+
+  .review {
+    width: 100%;
+  }
+
+  .contact-card {
+    width: 100%;
+    min-width: 0;
+    padding: 38px;
+  }
+}
