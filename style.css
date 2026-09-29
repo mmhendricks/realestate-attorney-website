@@ -149,6 +149,16 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
 .photo-grid {
   grid-template-columns: 1fr 1fr;
 }
+
+.photo-grid .wide {
+  grid-column: 1 / -1;
+}
+
+.photo-grid img,
+.photo-grid .wide {
+  height: 210px;
+}
+
 .photo-grid img { height:210px; object-fit:cover; }
 .photo-grid .wide { grid-column:1 / -1; height:235px; }
 
@@ -418,13 +428,3 @@ footer { background:#111c28; color:#fff; padding:24px 0; font-size:.82rem; }
   }
 }
   
-  .topbar-inner { min-height:48px; }
-  .phone { font-size:.98rem; }
-  .top-cta { padding:8px 13px; font-size:.78rem; }
-  .hero h1 { font-size:3.3rem; }
-  .hero h2 { font-size:1.2rem; }
-  .photo-grid { grid-template-columns:1fr; }
-  .photo-grid .wide { grid-column:auto; }
-  .photo-grid img, .photo-grid .wide { height:220px; }
-  .contact-card { padding:25px 20px; }
-}
