@@ -94,9 +94,9 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
 .hero h2 strong {
   display: block;
   color: var(--orange) !important;
-  font-size: clamp(2.6rem, 4.5vw, 3.6rem) !important;
-  line-height: 1;
-  margin-bottom: 12px;
+  font-size: clamp(3rem, 5.5vw, 4.4rem) !important;
+  line-height: .95;
+  margin-bottom: 14px;
   white-space: nowrap;
 }
 
