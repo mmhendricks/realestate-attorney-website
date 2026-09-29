@@ -76,7 +76,7 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
 .eyebrow { font-size:.78rem; font-weight:800; letter-spacing:.04em; color:#fff; margin:0 0 20px; }
 .hero h1 {
   margin: 0;
-  font-size: clamp(1.5rem, 2.8vw, 2.6rem);
+  font-size: clamp(1.3rem, 2.2vw, 2rem);
   line-height: 1;
   letter-spacing: -.02em;
 }
@@ -94,7 +94,7 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
 .hero h2 strong {
   display: block;
   color: var(--orange) !important;
-  font-size: clamp(2.3rem, 4vw, 3.2rem) !important;
+  font-size: clamp(2.6rem, 4.5vw, 3.6rem) !important;
   line-height: 1;
   margin-bottom: 12px;
   white-space: nowrap;
