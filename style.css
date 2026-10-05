@@ -101,7 +101,7 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
   min-height: 0;
 
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 300px;
+  grid-template-columns: minmax(0, 1fr) 350px;
   align-items: stretch;
   gap: 0;
 }
@@ -178,7 +178,7 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
 
 /* DESKTOP PHOTO */
 .hero-photo {
-  width: 300px;
+  width: 350px;
   height: 360px;
 
   margin: 0;
@@ -192,7 +192,7 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
 .hero-photo img {
   display: block;
 
-  width: 300px;
+  width: 350px;
   height: 360px;
 
   max-width: none;
