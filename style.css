@@ -74,7 +74,7 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
   min-height: 500px;
   display: grid;
   grid-template-columns: 1fr .85fr;
-  align-items: center;
+  align-items: start;
   gap: 35px;
 }
 
@@ -94,11 +94,6 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
 .hero h1::first-letter { color:#fff; }
 .hero h1 { }
 .hero h1 + h2 { margin-top:18px; }
-.hero h2 {
-  font-size: clamp(1.15rem, 2vw, 1.65rem);
-  line-height: 1.15;
-  margin-bottom: 32px;
-}
 
 .hero h2 strong {
   display: block;
@@ -108,24 +103,7 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
   margin-bottom: 14px;
   white-space: nowrap;
 }
-
-@media (min-width: 851px) {
-  .hero h2 {
-    white-space: nowrap;
-  }
-}
-
-@media (min-width: 851px) {
-  .hero h2 {
-    white-space: nowrap;
-  }
-}
 .hero h2 em { color:var(--orange); font-style:normal; }
-.hero-help {
-  font-size: clamp(1.15rem, 2vw, 1.65rem) !important;
-  line-height: 1.1;
-  margin: 18px 0 20px !important;
-}
 .hero-photo {
   height: 500px;
   align-self: start;
@@ -314,14 +292,6 @@ footer { background:#111c28; color:#fff; padding:24px 0; font-size:.82rem; }
     padding: 50px 0 35px;
   }
 
-  .hero h1 {
-  font-size: clamp(1.5rem, 6vw, 2.6rem);
-}
-
-  .hero h2 {
-    font-size: clamp(1.2rem, 3vw, 1.7rem);
-  }
-
   .hero-photo {
     min-height: 300px;
   }
@@ -389,16 +359,6 @@ footer { background:#111c28; color:#fff; padding:24px 0; font-size:.82rem; }
 
   .hero-copy {
     padding: 40px 0 30px;
-  }
-
-  .hero h1 {
-  font-size: clamp(1.5rem, 8vw, 2.4rem);
-  line-height: 1;
-}
-
-  .hero h2 {
-    font-size: 1.15rem;
-    line-height: 1.15;
   }
 
   .eyebrow {
@@ -750,9 +710,9 @@ footer { background:#111c28; color:#fff; padding:24px 0; font-size:.82rem; }
 
 .contact-today {
   color: var(--orange);
-  font-size: clamp(1.4rem, 2.5vw, 2rem);
-  line-height: 1;
-  margin: 18px 0 8px;
+  font-size: .78rem;
+  line-height: 1.2;
+  margin: 0 0 8px;
   font-weight: 900;
 }
 
@@ -763,14 +723,6 @@ footer { background:#111c28; color:#fff; padding:24px 0; font-size:.82rem; }
   margin: 0 0 8px;
   font-weight: 800;
   white-space: nowrap;
-}
-
-.hero-phone {
-  display: inline-block;
-  color: var(--orange);
-  font-size: clamp(1.15rem, 2vw, 1.5rem);
-  font-weight: 900;
-  margin-bottom: 2px;
 }
 
 .hero-phone:hover {
@@ -785,14 +737,14 @@ footer { background:#111c28; color:#fff; padding:24px 0; font-size:.82rem; }
   }
 
   .hero-title {
-    font-size: 1.05rem;
-    white-space: normal;
-  }
-
-  .hero-phone {
-    font-size: 1.2rem;
-  }
+  color: #fff;
+  font-size: .78rem;
+  line-height: 1.2;
+  margin: 0 0 8px;
+  font-weight: 800;
+  white-space: nowrap;
 }
+  
 }
 .hero-actions {
   display: flex;
@@ -807,7 +759,7 @@ footer { background:#111c28; color:#fff; padding:24px 0; font-size:.82rem; }
 
 .hero-phone {
   color: var(--orange);
-  font-size: 1.35rem;
+  font-size: .78rem;
   font-weight: 900;
   white-space: nowrap;
 }
@@ -830,76 +782,5 @@ footer { background:#111c28; color:#fff; padding:24px 0; font-size:.82rem; }
   .hero-phone {
     text-align: center;
     font-size: 1.2rem;
-  }
-}
-/* ================================
-   HERO — CONSISTENT TEXT SIZE
-   ================================ */
-
-/* Leave FACING FORECLOSURE? alone */
-
-/* Make all secondary hero text the same size */
-.hero .eyebrow,
-.hero .hero-help,
-.hero .contact-today,
-.hero .hero-title,
-.hero .hero-phone {
-  font-size: 1.05rem !important;
-  line-height: 1.2;
-}
-
-/* Unexpected expenses */
-.hero .eyebrow {
-  margin-bottom: 18px;
-}
-
-/* WE CAN HELP */
-.hero .hero-help {
-  margin: 0 0 18px !important;
-}
-
-/* CONTACT US TODAY */
-.hero .contact-today {
-  color: var(--orange);
-  font-weight: 900;
-  margin: 0 0 8px;
-}
-
-/* FORECLOSURE ATTORNEY OF IOWA */
-.hero .hero-title {
-  color: #fff;
-  font-weight: 800;
-  margin: 0 0 8px;
-  white-space: nowrap;
-}
-
-/* PHONE NUMBER */
-.hero .hero-phone {
-  color: var(--orange);
-  font-weight: 900;
-}
-
-/* Keep button spacing */
-.hero-actions {
-  margin-top: 18px;
-}
-
-/* Phone */
-@media (max-width: 850px) {
-
-  .hero .eyebrow,
-  .hero .hero-help,
-  .hero .contact-today,
-  .hero .hero-title,
-  .hero .hero-phone {
-    font-size: 1rem !important;
-  }
-
-  .hero .hero-title {
-    white-space: normal;
-  }
-
-  .hero-actions {
-    margin-top: 18px;
   }
 }
