@@ -73,12 +73,18 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
   z-index: 2;
   min-height: 500px;
   display: grid;
-  grid-template-columns: 1fr .85fr;
-  align-items: start;
-  gap: 35px;
+  grid-template-columns: 1fr 540px;
+  align-items: stretch;
+  gap: 40px;
 }
 
-.hero-copy { padding:65px 0; }
+.hero-copy {
+  padding: 65px 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .eyebrow { font-size:.78rem; font-weight:800; letter-spacing:.04em; color:#fff; margin:0 0 20px; }
 .hero h1 {
   margin: 0;
@@ -130,7 +136,8 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
-  margin-top: 0;
+  margin: 0;
+  min-width: 0;
 }
 .hero-photo img {
   height: 500px;
