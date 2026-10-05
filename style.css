@@ -746,4 +746,51 @@ footer { background:#111c28; color:#fff; padding:24px 0; font-size:.82rem; }
     margin-left: 16px;
     margin-right: 16px;
   }
+  /* HERO CONTACT INFORMATION */
+
+.contact-today {
+  color: var(--orange);
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  line-height: 1;
+  margin: 18px 0 8px;
+  font-weight: 900;
+}
+
+.hero-title {
+  color: #fff;
+  font-size: clamp(1rem, 1.8vw, 1.45rem);
+  line-height: 1.1;
+  margin: 0 0 8px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.hero-phone {
+  display: inline-block;
+  color: var(--orange);
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  font-weight: 900;
+  margin-bottom: 2px;
+}
+
+.hero-phone:hover {
+  color: var(--orange);
+  text-decoration: underline;
+}
+
+@media (max-width: 850px) {
+  .contact-today {
+    font-size: 1.35rem;
+    margin-top: 18px;
+  }
+
+  .hero-title {
+    font-size: 1.05rem;
+    white-space: normal;
+  }
+
+  .hero-phone {
+    font-size: 1.2rem;
+  }
+}
 }
