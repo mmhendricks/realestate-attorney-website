@@ -74,7 +74,7 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
   min-height: 500px;
   display: grid;
   grid-template-columns: 1fr .85fr;
-  align-items: center;
+  align-items: start;
   gap: 35px;
 }
 
