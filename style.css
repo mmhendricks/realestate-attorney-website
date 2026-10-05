@@ -860,7 +860,7 @@ textarea { resize:vertical; }
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
-    gap: 12px;
+    gap: 40px;
   }
 
   .hero-actions .button {
