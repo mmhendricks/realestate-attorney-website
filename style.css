@@ -835,6 +835,14 @@ textarea { resize:vertical; }
 }
 
 .hero-actions .button {
+  order: 1;
+}
+
+.hero-actions .hero-title {
+  order: 2;
+}
+
+.hero-actions .button {
   margin-top: 0;
 }
 
