@@ -740,3 +740,10 @@ footer { background:#111c28; color:#fff; padding:24px 0; font-size:.82rem; }
     max-width: 100%;
   }
 }
+@media (max-width: 850px) {
+  .office .container {
+    width: calc(100% - 32px);
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
