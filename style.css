@@ -832,3 +832,74 @@ footer { background:#111c28; color:#fff; padding:24px 0; font-size:.82rem; }
     font-size: 1.2rem;
   }
 }
+/* ================================
+   HERO — CONSISTENT TEXT SIZE
+   ================================ */
+
+/* Leave FACING FORECLOSURE? alone */
+
+/* Make all secondary hero text the same size */
+.hero .eyebrow,
+.hero .hero-help,
+.hero .contact-today,
+.hero .hero-title,
+.hero .hero-phone {
+  font-size: 1.05rem !important;
+  line-height: 1.2;
+}
+
+/* Unexpected expenses */
+.hero .eyebrow {
+  margin-bottom: 18px;
+}
+
+/* WE CAN HELP */
+.hero .hero-help {
+  margin: 0 0 18px !important;
+}
+
+/* CONTACT US TODAY */
+.hero .contact-today {
+  color: var(--orange);
+  font-weight: 900;
+  margin: 0 0 8px;
+}
+
+/* FORECLOSURE ATTORNEY OF IOWA */
+.hero .hero-title {
+  color: #fff;
+  font-weight: 800;
+  margin: 0 0 8px;
+  white-space: nowrap;
+}
+
+/* PHONE NUMBER */
+.hero .hero-phone {
+  color: var(--orange);
+  font-weight: 900;
+}
+
+/* Keep button spacing */
+.hero-actions {
+  margin-top: 18px;
+}
+
+/* Phone */
+@media (max-width: 850px) {
+
+  .hero .eyebrow,
+  .hero .hero-help,
+  .hero .contact-today,
+  .hero .hero-title,
+  .hero .hero-phone {
+    font-size: 1rem !important;
+  }
+
+  .hero .hero-title {
+    white-space: normal;
+  }
+
+  .hero-actions {
+    margin-top: 18px;
+  }
+}
