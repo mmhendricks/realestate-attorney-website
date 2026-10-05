@@ -878,3 +878,49 @@ textarea { resize:vertical; }
     height: 240px;
   }
 }
+/* ================================
+   DESKTOP HERO FIX
+   ================================ */
+@media (min-width: 851px) {
+
+  .hero {
+    min-height: 0;
+    height: 440px;
+    overflow: hidden;
+  }
+
+  .hero .container {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 62% 38%;
+    align-items: stretch;
+  }
+
+  .hero-content {
+    padding: 70px 40px 50px 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+  }
+
+  .hero-photo {
+    height: 100%;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    clip-path: none;
+  }
+
+  .hero-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+  }
+
+}
