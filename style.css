@@ -82,18 +82,7 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
 .eyebrow { font-size:.78rem; font-weight:800; letter-spacing:.04em; color:#fff; margin:0 0 20px; }
 .hero h1 {
   margin: 0;
-  font-size: clamp(1.3rem, 2.2vw, 2rem);
-  line-height: 1;
-  letter-spacing: -.02em;
-  white-space: nowrap;
 }
-.hero h1 span {
-  display: inline;
-}
-.hero h1 { color:#fff; }
-.hero h1::first-letter { color:#fff; }
-.hero h1 { }
-.hero h1 + h2 { margin-top:18px; }
 
 .hero h2 strong {
   display: block;
@@ -101,6 +90,37 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
   font-size: clamp(3rem, 5.5vw, 4.4rem) !important;
   line-height: .95;
   margin-bottom: 14px;
+  white-space: nowrap;
+}
+.hero .eyebrow,
+.hero .hero-help,
+.hero .contact-today,
+.hero .hero-title,
+.hero .hero-phone {
+  font-size: .78rem;
+  line-height: 1.2;
+}
+.hero-help {
+  margin: 0 0 12px !important;
+  font-weight: 800;
+}
+
+.contact-today {
+  color: var(--orange);
+  font-weight: 900;
+  margin: 0 0 8px;
+}
+
+.hero-title {
+  color: #fff;
+  font-weight: 800;
+  margin: 0 0 8px;
+  white-space: nowrap;
+}
+
+.hero-phone {
+  color: var(--orange);
+  font-weight: 900;
   white-space: nowrap;
 }
 .hero h2 em { color:var(--orange); font-style:normal; }
@@ -601,7 +621,6 @@ footer { background:#111c28; color:#fff; padding:24px 0; font-size:.82rem; }
     width: 100%;
     white-space: normal;
     overflow-wrap: anywhere;
-    font-size: .65rem;
     line-height: 1.35;
   }
 
@@ -611,7 +630,6 @@ footer { background:#111c28; color:#fff; padding:24px 0; font-size:.82rem; }
     min-width: 0;
     white-space: normal !important;
     overflow-wrap: anywhere;
-    font-size: clamp(1.15rem, 5vw, 1.5rem) !important;
     line-height: 1.1;
   }
 
@@ -621,7 +639,6 @@ footer { background:#111c28; color:#fff; padding:24px 0; font-size:.82rem; }
     min-width: 0;
     white-space: normal;
     overflow-wrap: anywhere;
-    font-size: clamp(1.5rem, 7vw, 2.2rem);
     line-height: 1;
   }
 
@@ -710,23 +727,6 @@ footer { background:#111c28; color:#fff; padding:24px 0; font-size:.82rem; }
   }
   /* HERO CONTACT INFORMATION */
 
-.contact-today {
-  color: var(--orange);
-  font-size: .78rem;
-  line-height: 1.2;
-  margin: 0 0 8px;
-  font-weight: 900;
-}
-
-.hero-title {
-  color: #fff;
-  font-size: clamp(1rem, 1.8vw, 1.45rem);
-  line-height: 1.1;
-  margin: 0 0 8px;
-  font-weight: 800;
-  white-space: nowrap;
-}
-
 .hero-phone:hover {
   color: var(--orange);
   text-decoration: underline;
@@ -769,7 +769,6 @@ footer { background:#111c28; color:#fff; padding:24px 0; font-size:.82rem; }
 .hero-phone:hover {
   text-decoration: underline;
 }
-
 @media (max-width: 850px) {
   .hero-actions {
     flex-direction: column;
@@ -783,6 +782,6 @@ footer { background:#111c28; color:#fff; padding:24px 0; font-size:.82rem; }
 
   .hero-phone {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: .78rem;
   }
 }
