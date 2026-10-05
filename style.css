@@ -921,20 +921,20 @@ textarea { resize:vertical; }
 
 .footer-photo img {
   width: 100%;
-  height: 240px;
+  height: 170px;
   object-fit: cover;
 }
 
 .footer-social {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 18px;
 }
 
 .footer-social h3 {
   margin: 0 0 5px;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 .footer-social a {
