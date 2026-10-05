@@ -145,7 +145,7 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
 }
 .hero h2 em { color:var(--orange); font-style:normal; }
 .hero-photo {
-  height: 500px;
+  height: 420px;
   align-self: stretch;
   display: flex;
   align-items: flex-start;
@@ -154,7 +154,7 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
   min-width: 0;
 }
 .hero-photo img {
-  height: 500px;
+  height: 420px;
   width: 100%;
   object-fit: cover;
   max-width: 540px;
