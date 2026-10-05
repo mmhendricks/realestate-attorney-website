@@ -306,7 +306,7 @@ footer { background:#111c28; color:#fff; padding:24px 0; font-size:.82rem; }
   }
 
   .hero .container {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 0;
   }
 
