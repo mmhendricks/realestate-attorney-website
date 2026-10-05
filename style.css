@@ -830,7 +830,7 @@ textarea { resize:vertical; }
 .hero-actions {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 40px;
   margin-top: 25px;
 }
 
