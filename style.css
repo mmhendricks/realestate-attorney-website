@@ -106,10 +106,11 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
 .hero h2 em { color:var(--orange); font-style:normal; }
 .hero-photo {
   height: 500px;
-  align-self: start;
+  align-self: stretch;
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
+  margin-top: 0;
 }
 .hero-photo img {
   height: 500px;
@@ -118,6 +119,7 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
   max-width: 540px;
   opacity: .92;
   clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
+  margin-top: 0;
 }
 
 .section {
