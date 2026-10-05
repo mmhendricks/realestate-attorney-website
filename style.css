@@ -246,16 +246,6 @@ textarea { resize:vertical; }
 .form-button { width:100%; }
 .form-status { margin:5px 0 0; color:#ffd2b5; font-weight:700; font-size:.85rem; }
 
-.office { background:#fff; }
-.office-grid { display:grid; grid-template-columns:1.1fr .8fr 1fr; gap:35px; align-items:center; }
-.office-grid img { height:220px; object-fit:cover; }
-.office-details { display:grid; gap:8px; color:var(--navy); }
-.office-details a { font-weight:800; color:var(--orange-dark); overflow-wrap:anywhere; }
-
-footer { background:#111c28; color:#fff; padding:24px 0; font-size:.82rem; }
-.footer-inner { display:flex; justify-content:space-between; gap:20px; align-items:center; }
-.footer-inner a { font-weight:800; }
-
 @media (max-width: 850px) {
   .container {
     width: calc(100% - 32px);
@@ -783,5 +773,89 @@ footer { background:#111c28; color:#fff; padding:24px 0; font-size:.82rem; }
   .hero-phone {
     text-align: center;
     font-size: .78rem;
+  }
+}
+/* ================================
+   SITE FOOTER
+   ================================ */
+
+.site-footer {
+  background: var(--navy);
+  color: #fff;
+  padding: 55px 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.1fr .8fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.footer-kicker {
+  color: var(--orange);
+  font-weight: 900;
+  letter-spacing: .06em;
+  font-size: 1.1rem;
+  margin: 0 0 8px;
+}
+
+.footer-office h2 {
+  color: #fff;
+  font-size: clamp(1.7rem, 3vw, 2.8rem);
+  line-height: 1;
+  margin: 0 0 12px;
+}
+
+.footer-office > p:not(.footer-kicker) {
+  margin: 0 0 22px;
+}
+
+.footer-details {
+  display: grid;
+  gap: 8px;
+}
+
+.footer-details a {
+  color: var(--orange);
+  font-weight: 800;
+  overflow-wrap: anywhere;
+}
+
+.footer-photo img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-social h3 {
+  margin: 0 0 5px;
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.footer-social a {
+  color: var(--orange);
+  font-weight: 900;
+}
+
+.footer-social a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 850px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-photo img {
+    height: 240px;
   }
 }
