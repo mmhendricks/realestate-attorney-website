@@ -138,13 +138,37 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
   white-space: nowrap;
 }
 
-.hero .eyebrow,
-.hero .hero-help,
-.hero .contact-today,
-.hero .hero-title,
-.hero .hero-phone {
+.hero .eyebrow {
   font-size: .78rem;
   line-height: 1.2;
+}
+
+.hero .hero-help {
+  font-size: 1.15rem;
+  line-height: 1.25;
+  margin: 0 0 12px !important;
+  font-weight: 900;
+}
+
+.hero .contact-today {
+  font-size: 1.45rem;
+  line-height: 1.1;
+  margin: 0 0 8px;
+  font-weight: 900;
+}
+
+.hero .hero-title {
+  font-size: .85rem;
+  line-height: 1.2;
+  margin: 0 0 8px;
+  font-weight: 800;
+}
+
+.hero .hero-phone {
+  font-size: 1rem;
+  line-height: 1;
+  font-weight: 900;
+  white-space: nowrap;
 }
 
 .hero-help {
@@ -167,8 +191,10 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
 
 .hero-phone {
   color: var(--orange);
+  font-size: 1rem;
   font-weight: 900;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 .hero h2 em {
