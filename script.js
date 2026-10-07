@@ -12,3 +12,14 @@ document.querySelectorAll('#main-nav a').forEach(link => {
     menuButton?.setAttribute('aria-expanded', 'false');
   });
 });
+const params = new URLSearchParams(window.location.search);
+
+if (params.get('submitted') === 'true') {
+  const form = document.querySelector('#contact-form');
+  const heading = document.querySelector('#contact-heading');
+  const thankYou = document.querySelector('#thank-you-message');
+
+  if (form) form.style.display = 'none';
+  if (heading) heading.textContent = 'THANK YOU!';
+  if (thankYou) thankYou.style.display = 'block';
+}
