@@ -984,3 +984,126 @@ textarea {
     height: 240px;
   }
 }
+
+
+/* MOBILE LAYOUT FIX */
+@media (max-width: 850px) {
+  /* Keep the header compact */
+  .site-header .nav {
+    gap: 12px;
+  }
+
+  .brand {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .brand span {
+    font-size: 12px;
+  }
+
+  .brand strong {
+    font-size: 15px;
+    line-height: 1.05;
+  }
+
+  .header-phone {
+    font-size: 13px;
+    line-height: 1.2;
+    text-align: center;
+    min-width: 0;
+  }
+
+  .menu-toggle {
+    flex-shrink: 0;
+  }
+
+  /* Stack the hero content and photo */
+  .hero,
+  .hero .container,
+  .hero-content {
+    height: auto;
+    min-height: 0;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-copy {
+    order: 1;
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: 0;
+    padding: 28px 0;
+  }
+
+  .hero-copy h2,
+  .hero-copy h3,
+  .hero-copy p {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .hero-copy > h2:first-child {
+    font-size: clamp(28px, 8vw, 40px);
+    line-height: 1.1;
+  }
+
+  .hero-photo {
+    order: 2;
+    position: relative;
+    width: 100%;
+    height: 220px;
+    right: auto;
+    top: auto;
+  }
+
+  .hero-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: none;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .hero-title {
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
+    overflow-wrap: anywhere;
+  }
+
+  /* Prevent the help section from overflowing */
+  .help-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .photo-grid {
+    min-width: 0;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .photo-grid img,
+  .photo-grid .wide {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-width: 0;
+    grid-column: auto;
+  }
+}
