@@ -207,23 +207,25 @@ min-height: 360px;
 }
 
 /* DESKTOP PHOTO */
+
 .hero-photo {
   width: 350px;
-  height: 360px;
-
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
   margin: 0;
   padding: 0;
-
   overflow: hidden;
-
   display: block;
 }
+
 
 .hero-photo img {
   display: block;
 
   width: 350px;
-  height: 360px;
+height: 100%;
 
   max-width: none;
 
@@ -236,7 +238,6 @@ min-height: 360px;
   padding: 0;
 
   clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
-}
 
 .section {
   padding: 60px 0;
