@@ -238,6 +238,7 @@ height: 100%;
   padding: 0;
 
   clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
+}
 
 .section {
   padding: 60px 0;
@@ -554,9 +555,7 @@ textarea { resize:vertical; }
     font-size: .75rem;
   }
 }
-  
-  }
-}
+
 @media (max-width: 850px) {
   body {
     padding-top: 76px;
@@ -820,9 +819,9 @@ textarea {
     margin-left: 16px;
     margin-right: 16px;
   }
+}
 
-  /* HERO CONTACT INFORMATION */
-
+/* HERO CONTACT INFORMATION */
 .hero-phone:hover {
   color: var(--orange);
   text-decoration: underline;
@@ -973,4 +972,3 @@ textarea {
     height: 240px;
   }
 }
- 
