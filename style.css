@@ -63,7 +63,8 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
   overflow: hidden;
   background: var(--navy-2);
   color: #fff;
-  height: 360px;
+  height: auto;
+  min-height: 360px;
 }
 
 .hero-overlay {
@@ -97,8 +98,8 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
 
   width: calc(100% - 60px);
   max-width: 1300px;
-  height: 360px;
-  min-height: 0;
+  height: auto;
+min-height: 360px;
 
   display: grid;
   grid-template-columns: minmax(0, 1fr) 350px;
@@ -107,7 +108,8 @@ nav a:hover, nav a.active { color:var(--orange); border-color:var(--orange); }
 }
 
 .hero-copy {
-  height: 360px;
+  height: auto;
+min-height: 360px;
   min-width: 0;
 
   padding: 35px 30px 30px 0;
@@ -787,23 +789,37 @@ textarea { resize:vertical; }
     height: 210px;
   }
 
-  /* CONTACT FORM */
-  .contact-card {
-    width: 100%;
-    padding: 25px 18px;
-  }
-
-  input,
-  textarea {
-    max-width: 100%;
-  }
+ 
+/* CONTACT FORM */
+.contact-card {
+  width: 100%;
+  padding: 25px 18px;
 }
+
+input,
+textarea {
+  max-width: 100%;
+}
+
+/* FIX HERO HEIGHT ON MOBILE */
+.hero .container {
+  height: auto;
+  min-height: 0;
+}
+
+.hero-copy {
+  height: auto;
+  min-height: 0;
+}
+}
+
 @media (max-width: 850px) {
   .office .container {
     width: calc(100% - 32px);
     margin-left: 16px;
     margin-right: 16px;
   }
+
   /* HERO CONTACT INFORMATION */
 
 .hero-phone:hover {
