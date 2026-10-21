@@ -25,27 +25,51 @@ if (params.get('submitted') === 'true') {
 }
 
 
-/* Update the orange navigation highlight */
+/* Update navigation highlight when clicking or scrolling */
 const navLinks = document.querySelectorAll('#main-nav a');
 
-function updateActiveNav() {
-  const currentSection = window.location.hash || '#home';
+const sections = [
+  { id: 'home', link: '#home' },
+  { id: 'help', link: '#help' },
+  { id: 'reviews', link: '#reviews' },
+  { id: 'contact', link: '#contact' }
+];
 
+function setActiveNav(hash) {
   navLinks.forEach(link => {
     link.classList.toggle(
       'active',
-      link.getAttribute('href') === currentSection
+      link.getAttribute('href') === hash
     );
   });
 }
 
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
-    navLinks.forEach(item => item.classList.remove('active'));
-    link.classList.add('active');
+    setActiveNav(link.getAttribute('href'));
   });
 });
 
-window.addEventListener('hashchange', updateActiveNav);
-updateActiveNav();
+const sectionObserver = new IntersectionObserver(entries => {
+  const visibleSections = entries
+    .filter(entry => entry.isIntersecting)
+    .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
 
+  if (visibleSections.length > 0) {
+    setActiveNav('#' + visibleSections[0].target.id);
+  }
+}, {
+  rootMargin: '-25% 0px -55% 0px',
+  threshold: [0, 0.1, 0.25, 0.5, 0.75]
+});
+
+sections.forEach(section => {
+  const element = document.getElementById(section.id);
+  if (element) sectionObserver.observe(element);
+});
+
+window.addEventListener('hashchange', () => {
+  setActiveNav(window.location.hash || '#home');
+});
+
+setActiveNav(window.location.hash || '#home');
