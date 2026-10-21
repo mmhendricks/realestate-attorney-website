@@ -23,3 +23,29 @@ if (params.get('submitted') === 'true') {
   if (heading) heading.textContent = 'THANK YOU!';
   if (thankYou) thankYou.style.display = 'block';
 }
+
+
+/* Update the orange navigation highlight */
+const navLinks = document.querySelectorAll('#main-nav a');
+
+function updateActiveNav() {
+  const currentSection = window.location.hash || '#home';
+
+  navLinks.forEach(link => {
+    link.classList.toggle(
+      'active',
+      link.getAttribute('href') === currentSection
+    );
+  });
+}
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.forEach(item => item.classList.remove('active'));
+    link.classList.add('active');
+  });
+});
+
+window.addEventListener('hashchange', updateActiveNav);
+updateActiveNav();
+
