@@ -635,27 +635,38 @@ textarea { resize:vertical; }
     width: 100%;
     min-height: 76px;
     display: grid;
-    grid-template-columns: 90px minmax(0, 1fr) 38px;
+    
+.hero-photo img {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+  clip-path: none;
+}
+
     align-items: center;
     gap: 8px;
   }
+  
+.brand {
+  width: 120px;
+  max-width: 120px;
+  min-width: 0;
+}
+ 
+.brand span {
+  font-size: .62rem;
+  line-height: 1.1;
+}
 
-  .brand {
-    width: 90px;
-    max-width: 90px;
-    min-width: 0;
-  }
-
-  .brand span {
-    font-size: .65rem;
-    line-height: 1;
-  }
-
-  .brand strong {
-    font-size: .85rem;
-    line-height: 1;
-    overflow-wrap: break-word;
-  }
+.brand strong {
+  font-size: .78rem;
+  line-height: 1.05;
+  overflow-wrap: normal;
+}
 
   /* CALL US TODAY */
   .header-phone {
@@ -851,20 +862,22 @@ textarea {
     margin-top: 18px;
   }
 
-  .hero-title {
+.hero .hero-title {
   color: #fff;
-  font-size: .78rem;
-  line-height: 1.2;
-  margin: 0 0 8px;
+  font-size: .9rem;
+  line-height: 1.3;
+  margin: 0;
   font-weight: 800;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-align: center;
 }
   
 }
 .hero-actions {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 18px;
   margin-top: 25px;
 }
 
