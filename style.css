@@ -908,12 +908,14 @@ textarea {
   padding: 55px 0;
 }
 
+
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.1fr .8fr 1fr;
-  gap: 40px;
+  grid-template-columns: 1.5fr 220px 1fr;
+  gap: 35px;
   align-items: center;
 }
+
 
 .footer-kicker {
   color: var(--orange);
