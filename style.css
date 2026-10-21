@@ -13,7 +13,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 110px;
+  scroll-padding-top: 85px;
 }
 
 body {
@@ -251,7 +251,7 @@ height: 100%;
 #help,
 #reviews,
 #contact {
-  scroll-margin-top: 110px;
+  scroll-margin-top: 85px;
 }
 
 .help { background:#fff; }
