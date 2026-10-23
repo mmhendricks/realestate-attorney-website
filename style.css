@@ -167,8 +167,10 @@ min-height: 360px;
 .hero .hero-title {
   font-size: 1.35rem;
   line-height: 1.2;
-  margin: -15px 0 10px;
+  margin: -10px 0 10px;
   font-weight: 800;
+  position: relative;
+  top: 3px;
 }
 
 .hero .hero-phone {
